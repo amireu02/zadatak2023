@@ -1,0 +1,251 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+}
+#home {
+    height: 960.28px;
+    position: relative;
+    padding-bottom: 40px;
+}
+.home-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(40%);
+    border-bottom: solid 20px #c0560b;
+}
+.home-navbar {
+    height: 10%;
+    padding-inline: 50px;
+    display: flex;
+    align-items: center;
+
+}
+.home-navbar-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.home-navbar-options {
+    display: flex;
+    gap: 25px;
+
+}
+.dubinsko {
+    background-color:#c0560b	 ;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    
+}
+.home-content {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    padding-left: 20% ;
+    gap: 25px;
+}
+.dubinsko-naziv {
+    font-size: 56px;
+    color: #c0560b;
+    font-weight: bold;
+    padding-bottom: 25px;
+
+}
+.dubinsko-naslov {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+.opis-dubinsko {
+    font-size: 23px;
+    color: white;
+    padding-bottom: 50px;
+}
+.donji-dio-adresa {
+    height: 1%;
+    padding-inline: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 380px;
+    
+
+ 
+    
+}
+.rezervacija {
+    background-color:#c0560b	 ;
+    color: white;
+    font-size: 28px;
+    padding: 30px 20px;
+    border-radius: 25px;
+
+
+}
+.donji-dio {
+    padding: 0;
+    margin: 0;
+    height: 900px;
+    justify-self: center;
+    align-items: center;
+    
+    
+
+}
+.donji-dio-kontent{
+
+}
+.section {
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slider {
+    width: 1500px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.slide {
+    width: 500%;
+    height: 500px;
+    display: flex;
+    margin-right: 10px;
+    
+  
+
+}
+.slide input{
+    display: none;
+
+
+}
+.st{
+    width: 20%;
+    transition: 3s;
+    animation: fadeIn linear;
+
+}
+@keyframes fadeIn{
+    0%{
+        transform: scale(2s);
+    }
+}
+.st img{
+    width: 1500px;
+    height: 650px;
+    z-index: -1;
+    
+
+}
+.nav-m{
+    position: absolute;
+    width: 1500px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.m-btn{
+    border: 2px solid #c0560b;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 11s;
+
+}
+.m-btn:not(:last-child) {
+    margin-right: 30px;
+
+}
+.m-btn:hover{
+    background-color: #c0560b;
+
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+.nav-auto{
+    position: absolute;
+    width: 1500px;
+    margin-top: 550px;
+    display: flex;
+    justify-content: center;
+
+}
+.nav-auto div{
+    border: 2px solid #c0560b;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 11s;
+
+}
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    
+    justify-content: center;
+
+}
+#radio1:checked ~ .nav-auto .a-b1 {
+    background-color: #c0560b;
+
+}
+#radio2:checked ~ .nav-auto .a-b2 {
+    background-color: #c0560b;
+    
+}
+#radio3:checked ~ .nav-auto .a-b3 {
+    background-color: #c0560b;
+    
+}
+#radio4:checked ~ .nav-auto .a-b4 {
+    background-color: #c0560b;
+    
+}
+.drugi-tekst{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-left: 20% ;
+    gap: 25px;
+    position: absolute;
+    animation: fadeIn .4s linear;
+}
+@keyframes fadeIn{
+    0%{
+        transform: scale(2s);
+    }
+}
